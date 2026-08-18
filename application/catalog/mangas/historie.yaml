@@ -5,6 +5,12 @@ volumes:
   - id: "001"
     number: 1
     title: ヒストリエ(1)
-    cover_object_key: manga/historie/001/cover.jpeg
+    cover_object_key: manga/historie/001/cover.avif
     page_count: 215
-    page_extension: jpeg
+    page_extension: avif
+  - id: "002"
+    number: 2
+    title: ヒストリエ(2)
+    cover_object_key: manga/historie/002/cover.avif
+    page_count: 223
+    page_extension: avif

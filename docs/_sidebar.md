@@ -8,6 +8,7 @@
 
 - アーキテクチャ
   - [v1 構成](architecture/v1.md)
+  - [バックエンド構成](architecture/backend.md)
   - [フロントエンド構成](architecture/frontend.md)
 
 - 運用
