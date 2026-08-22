@@ -1,0 +1,37 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "tomozo6", email = "liebestraum.tomo@gmail.com" }]
+requires-python = ">=3.14.6"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "fastapi[standard]>=0.141.1",
+    "firebase-admin>=7.5.0",
+    "greenlet>=3.5.5",
+    "pyyaml>=6.0.3",
+    "scalar-fastapi>=1.8.2",
+    "sqlmodel>=0.0.37",
+]
+
+[project.scripts]
+api = "api:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.black]
+line-length = 200
+
+[tool.ruff]
+line-length = 200
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[dependency-groups]
+dev = [
+    "types-pyyaml>=6.0.12.20260815",
+]
