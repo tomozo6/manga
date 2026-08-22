@@ -7,4 +7,21 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
-manga.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Generated SQLite databases
+*.db
+*.sqlite
+*.sqlite3
