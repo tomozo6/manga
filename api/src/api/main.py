@@ -36,17 +36,17 @@ app.include_router(manga_router)
 #     return FileResponse(static_directory / "index.html")
 
 
-@app.get("/library")
+@app.get("/library", include_in_schema=False)
 def library() -> FileResponse:
     return FileResponse(static_directory / "library.html")
 
 
-@app.get("/manga/{manga_id}")
+@app.get("/manga/{manga_id}", include_in_schema=False)
 def manga(manga_id: str) -> FileResponse:
     return FileResponse(static_directory / "manga.html")
 
 
-@app.get("/manga/{manga_id}/volumes/{volume_id}")
+@app.get("/manga/{manga_id}/volumes/{volume_id}", include_in_schema=False)
 def reader(manga_id: str, volume_id: str) -> FileResponse:
     return FileResponse(static_directory / "reader.html")
 

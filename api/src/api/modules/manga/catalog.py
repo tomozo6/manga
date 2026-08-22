@@ -15,7 +15,7 @@ catalog_directory = api_directory / "catalog" / "mangas"
 class MangaCatalog(BaseModel):
     id: str
     title: str
-    author_name: str
+    author: str
     cover_object_key: str = ""
     volumes: list[VolumeCatalog]
 

@@ -8,7 +8,7 @@ class Manga(SQLModel, table=True):
 
     id: str = Field(primary_key=True)
     title: str
-    author_name: str
+    author: str
     cover_object_key: str = ""
 
 

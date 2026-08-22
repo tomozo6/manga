@@ -27,3 +27,12 @@ Firebase Authentication はステージングの実プロジェクトを使用�
 
 漫画カタログは作品ごとの YAML で編集し、SQLite を生成して利用します。YAML の形式と
 ローカル・Dockerでの生成手順は [開発ドキュメント](docs/operations/catalog.md) を参照してください。
+
+
+
+```js
+allow pasting
+
+const { currentUser } = await import("/assets/js/firebase.js");
+await currentUser().getIdToken();
+```
